@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedro Lucas — Dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">PL<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#redes" class="nav-link">Redes</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HOME -->
+  <section class="section hero" id="home">
+    <div class="hero-content reveal">
+      <div class="avatar-wrapper">
+        <img src="https://i.imgur.com/ZF8eNg9.jpeg" alt="Pedro Lucas" class="avatar" onerror="this.src='https://ui-avatars.com/api/?name=Pedro+Lucas&size=200&background=7c3aed&color=fff&bold=true'" />
+        <div class="avatar-ring"></div>
+      </div>
+      <p class="hero-greeting">Olá, eu sou</p>
+      <h1 class="hero-name">Pedro Lucas<span class="dot">.</span></h1>
+      <p class="hero-role">Estudante de Desenvolvimento de Sistemas</p>
+      <p class="hero-tagline">Construindo meu futuro com código 🚀</p>
+      <a href="#sobre" class="btn btn-primary">Saiba mais</a>
+    </div>
+    <div class="hero-glow"></div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <h2 class="section-title reveal">Sobre <span>mim</span></h2>
+      <div class="sobre-grid reveal">
+        <div class="sobre-card">
+          <div class="sobre-icon"><i class="fa-solid fa-user"></i></div>
+          <h3>Quem sou</h3>
+          <p>Tenho <strong>16 anos</strong> e sou estudante do curso <strong>Técnico em Desenvolvimento de Sistemas</strong>. Apaixonado por tecnologia desde cedo, gosto de aprender coisas novas e transformar ideias em código.</p>
+        </div>
+        <div class="sobre-card">
+          <div class="sobre-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Interesses</h3>
+          <ul class="interesse-list">
+            <li><i class="fa-solid fa-check"></i> Programação</li>
+            <li><i class="fa-solid fa-check"></i> Criação de sites</li>
+            <li><i class="fa-solid fa-check"></i> Tecnologia</li>
+            <li><i class="fa-solid fa-check"></i> Desenvolvimento web</li>
+          </ul>
+        </div>
+        <div class="sobre-card">
+          <div class="sobre-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>Formação</h3>
+          <p>Cursando <strong>Técnico em Desenvolvimento de Sistemas</strong>, onde aprendo lógica de programação, desenvolvimento web, banco de dados e muito mais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REDES -->
+  <section class="section" id="redes">
+    <div class="container">
+      <h2 class="section-title reveal">Redes <span>Sociais</span></h2>
+      <p class="section-sub reveal">Me encontre nas redes</p>
+      <div class="redes-grid reveal">
+        <a href="https://www.instagram.com/ordepwp?igsh=MXZrZjN4c2Zrb2xhbg==" target="_blank" rel="noopener noreferrer" class="rede-card instagram">
+          <i class="fa-brands fa-instagram"></i>
+          <span class="rede-nome">Instagram</span>
+          <span class="rede-user">@ordepwp</span>
+          <span class="rede-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a>
+        <a href="https://www.tiktok.com/@ordepwp?_r=1&_t=ZS-954DgIQiGFk" target="_blank" rel="noopener noreferrer" class="rede-card tiktok">
+          <i class="fa-brands fa-tiktok"></i>
+          <span class="rede-nome">TikTok</span>
+          <span class="rede-user">@ordepwp</span>
+          <span class="rede-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section" id="contato">
+    <div class="container">
+      <h2 class="section-title reveal">Entre em <span>contato</span></h2>
+      <p class="section-sub reveal">Manda uma mensagem!</p>
+      <form class="contato-form reveal" id="contatoForm">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+        </div>
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva aqui..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-whatsapp btn-full">
+          <i class="fa-brands fa-whatsapp"></i> Enviar pelo WhatsApp
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Feito por <span>Pedro Lucas</span> &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
